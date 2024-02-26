@@ -1,3 +1,6 @@
 kafka:
   consumer:
     kafkaServer: localhost:9092
+  backoff:
+    interval: 200
+    maxAttempts: 4

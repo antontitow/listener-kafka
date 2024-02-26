@@ -1,14 +1,13 @@
 package ru.titov.kafkaconsumer.domain;
 
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
+import lombok.*;
 
 @Builder
 @EqualsAndHashCode
 @ToString
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class DiskParam {
     private Double db;
     private Double dbAngle;

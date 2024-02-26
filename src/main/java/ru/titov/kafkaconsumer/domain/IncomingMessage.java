@@ -1,9 +1,6 @@
 package ru.titov.kafkaconsumer.domain;
 
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
+import lombok.*;
 
 import java.util.List;
 
@@ -11,6 +8,8 @@ import java.util.List;
 @EqualsAndHashCode
 @ToString
 @Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class IncomingMessage {
     private String comment;
     private Integer count;
