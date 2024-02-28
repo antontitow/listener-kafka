@@ -14,9 +14,8 @@ import org.springframework.util.backoff.FixedBackOff;
 @Getter
 @Setter
 public class ErrorKafkaConfig {
-    private Long interval;
-
-    private Long maxAttempts;
+    private Long interval = 0L;
+    private Long maxAttempts = 0L;
 
     @Bean
     public DefaultErrorHandler errorHandler() {

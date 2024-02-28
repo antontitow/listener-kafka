@@ -1,7 +1,6 @@
 package ru.titov.kafkaconsumer.config.deserializer;
 
 import com.google.gson.Gson;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.kafka.common.serialization.Deserializer;
 import ru.titov.kafkaconsumer.domain.IncomingMessage;
 
@@ -15,8 +14,6 @@ public class IncomingMessageDeserializer implements Deserializer<IncomingMessage
             return null;
         }
         String string = new String(bytes);
-//        string = StringUtils.removeStart(string, "{");
-//        string = StringUtils.removeEnd(string, "}");
         System.out.println("--");
         System.out.println(string);
         System.out.println("--");
